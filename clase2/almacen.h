@@ -9,6 +9,5 @@ class Almacen{
 		bool empty();
 		int size();
 
-	private:
 		std::vector<int> *lista;
 };

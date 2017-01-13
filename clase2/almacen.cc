@@ -17,7 +17,7 @@ void Almacen::add(int i){
 	lista->push_back(i);
 }
 
-bool Almace::empty(){
+bool Almacen::empty(){
 	return lista->empty();
 }
 

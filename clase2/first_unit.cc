@@ -1,34 +1,33 @@
-#include "almacen.h"
+#include "almacen.cc"
 #include "gtest/gtest.h"
 
-class AlmacenFixture : public ::testing::Test{
+class AlmacenF: public testing::Test{
 	public:
-		SetUp(){
+		void SetUp(){
 		}
-		TearDown(){
+		void TearDown(){
 		}
-	private:
-		static Almacen a(10);
+		Almacen* a = new Almacen(10);
 };
 
-TEST_F(Almacen, constructor){
-	ASSERT_EQ(10, a.lista->capacity());
+TEST_F(AlmacenF, constructor){
+	ASSERT_EQ(10, a->lista->capacity());
 }
 
-TEST_F(Almacen, add){
-	a.add(3);
-	ASSERT_EQ(1, a.lista->size());
+TEST_F(AlmacenF, add){
+	a->add(3);
+	ASSERT_EQ(1, a->lista->size());
 }
 
-TEST_F(Almacen, delet){
-	a.delet(0);
-	ASSERT_EQ(0, a.lista->size());
+TEST_F(AlmacenF, delet){
+	//a->delet(1);
+	ASSERT_EQ(0, a->lista->size());
 }
 
-TEST_F(Almacen, empty){
-	ASSERT_EQ(true, a.empty());
+TEST_F(AlmacenF, empty){
+	ASSERT_EQ(true, a->empty());
 }
 
-TEST_F(Almacen, size){
-	ASSERT_EQ(0, a.size());
+TEST_F(AlmacenF, size){
+	ASSERT_EQ(0, a->size());
 }
