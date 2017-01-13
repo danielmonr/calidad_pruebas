@@ -20,7 +20,8 @@ TEST_F(AlmacenF, add){
 }
 
 TEST_F(AlmacenF, delet){
-	//a->delet(1);
+    a->add(3);
+	a->delet(0);
 	ASSERT_EQ(0, a->lista->size());
 }
 
