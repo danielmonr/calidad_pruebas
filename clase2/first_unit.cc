@@ -8,7 +8,7 @@ class TimeF : public testing::Test{
         tiempo = time(NULL);
     }
     virtual void TearDown(){
-        EXPECT_TRUE(time(NULL) - tiempo <= 10) << "tardo mucho tiempo\n";
+        EXPECT_TRUE(time(NULL) - tiempo <= 1) << "tardo mucho tiempo\n";
     }
     private:
     time_t tiempo;
@@ -39,7 +39,7 @@ TEST_F(AlmacenF, constructor){
 
 TEST_F(AlmacenF, add){
 	a->add(3);
-    sleep(11);
+    sleep(2);
 	ASSERT_EQ(1, a->lista->size());
 }
 
