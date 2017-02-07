@@ -1,0 +1,11 @@
+file: /home/monzalvo/Documents/Tec/Pruebas/covtool-2.1/example/program.c 7 7 100
+il:  4 5 7 10 12 15 17 
+el:  4 5 7 10 12 15 17 
+totals: 7 7 100
+dir: /home 7 7 100
+dir: /home/monzalvo 7 7 100
+dir: /home/monzalvo/Documents 7 7 100
+dir: /home/monzalvo/Documents/Tec 7 7 100
+dir: /home/monzalvo/Documents/Tec/Pruebas 7 7 100
+dir: /home/monzalvo/Documents/Tec/Pruebas/covtool-2.1 7 7 100
+dir: /home/monzalvo/Documents/Tec/Pruebas/covtool-2.1/example 7 7 100
